@@ -73,9 +73,66 @@ video 			{max-width: 100%}
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-@media 			only screen and (max-width: 900px)
-{
-img 			{width: 100%;}
-body			{font-size: 19px;}
 }
 
+/* ── RESPONSIVE MOBILE TWEAKS ── */
+@media only screen and (max-width: 900px) {
+  /* 1. Prevent any sideways scroll */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* 2. Global box-sizing so padding/borders don’t push past 100% */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* 3. Match your navbar’s 10px side padding everywhere */
+  #page,
+  .logodiv,
+  #content,
+  .header,
+  .categories {
+    padding: 0 10px;
+  }
+
+  /* 4. Filter element: auto width + same side margins */
+  .filter {
+    width: auto !important;
+    margin: 12px 10px 0;
+    padding: 0;
+  }
+
+  /* 5. Zero out list margins/padding */
+  #list {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 6. Clamp any rogue 100vw/full-bleed widths */
+  [class*="vw"],
+  [style*="100vw"],
+  .full-bleed {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* 7. Force images/media to scale within their container */
+  img,
+  video,
+  iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  /* 8. Bump up type for mobile readability */
+  body {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
