@@ -1,8 +1,8 @@
-@font-face    {
-        font-family: 'Share Tech Mono';
-        src: url('/font.eot');
+@font-face 		{
+				font-family: 'Share Tech Mono';
+				src: url('/font.eot');
 
-        }
+				}
 
 body            {letter-spacing: 0.1px; padding: 0; margin: 0; font-family: 'Share Tech Mono', Monospace, Courier; 
                 font-weight: 400; font-size: 17px; color: #c8c8c8; background: #222;}
@@ -17,21 +17,21 @@ p               {padding: 0; margin: 10px 0 30px 0;}
 img             {width: 900px; max-width: 900px; margin-bottom: 20px;}
 #page           {max-width: 900px; margin: auto; padding: 0 20px;}
 #content        {max-width:100%; margin: auto;}
-#footer     {max-width: 900px; margin:auto; margin-top: 55px;}
-.header     {height: 33px; width: 100%; margin-top: 20px; margin-bottom: 50px; border-bottom: dotted 1px #444;}
-.logodiv    {max-width: 900px; margin:auto; padding: 0 20px;}
-.logo     {width: 41px; margin: auto; margin-top: 18px; border: solid 1px #FFF;}
+#footer 		{max-width: 900px; margin:auto; margin-top: 55px;}
+.header			{height: 33px; width: 100%; margin-top: 20px; margin-bottom: 50px; border-bottom: dotted 1px #444;}
+.logodiv 		{max-width: 900px; margin:auto; padding: 0 20px;}
+.logo			{width: 41px; margin: auto; margin-top: 18px; border: solid 1px #FFF;}
 #list           {margin-bottom: 50px;}
 #post           {max-width: 900px; margin-bottom: 20px; margin-top: -10px; line-height: 28px;}
-.categories   {max-width: 300px; right:0; margin: 40px 60px 0 0; position: fixed; background: #222;
-        text-align: right; z-index: 0;}
-@media      all and (max-width: 1000px) and (min-width: 20px) {
-.categories   {visibility: hidden;}
-.catbox     {visibility: hidden;}
+.categories		{max-width: 300px; right:0; margin: 40px 60px 0 0; position: fixed; background: #222;
+				text-align: right; z-index: 0;}
+@media 			all and (max-width: 1000px) and (min-width: 20px) {
+.categories 	{visibility: hidden;}
+.catbox			{visibility: hidden;}
 }
 .center {margin-left: auto; margin-right: auto;}
-.catbox     {width: 300px; height: 160px; right:0; margin:0; position: absolute; background: #222;
-        display: block; z-index: 999;}
+.catbox			{width: 300px; height: 160px; right:0; margin:0; position: absolute; background: #222;
+				display: block; z-index: 999;}
 .footdogs       {margin:0 5px}
 .tag            {color: #c8c8c8;}
 .pretag         {color: #5c5c5c;}
@@ -48,7 +48,7 @@ img             {width: 900px; max-width: 900px; margin-bottom: 20px;}
 .filter         {display:block; margin-bottom: 30px; margin-top: -20px; text-align: right;}
 .description    {background: #1f1f1f; padding: 10px 0 10px 10px; margin-top: 0px;}
 .videowrapper   {position: relative; padding-bottom: 56.45%; height: 0;}
-video       {max-width: 100%}
+video 			{max-width: 100%}
 
 /* tooltip thing*/
 .tooltip {
@@ -75,7 +75,7 @@ video       {max-width: 100%}
   visibility: visible;
 }
 
-/* â”€â”€ RESPONSIVE MOBILE TWEAKS â”€â”€ */
+/* ── RESPONSIVE MOBILE TWEAKS ── */
 @media only screen and (max-width: 900px) {
   /* 1. Prevent any sideways scroll */
   html,
@@ -83,14 +83,14 @@ video       {max-width: 100%}
     overflow-x: hidden;
   }
 
-  /* 2. Global box-sizing so padding/borders donâ€™t push past 100% */
+  /* 2. Global box-sizing so padding/borders don’t push past 100% */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
 
-  /* 3. Match your navbarâ€™s 10px side padding everywhere */
+  /* 3. Match your navbar’s 10px side padding everywhere */
   #page,
   .logodiv,
   #content,
